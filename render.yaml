@@ -4,6 +4,7 @@ services:
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
+    autoDeploy: true
     envVars:
       - key: SECRET_KEY
         generateValue: true

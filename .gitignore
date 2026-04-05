@@ -1,0 +1,19 @@
+# Init git if not already done
+git init
+
+# Create .gitignore first
+echo ".env
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+htmlcov
+" > .gitignore
+
+git add .
+git commit -m "initial commit"
+
+# Create repo on github.com then:
+git remote add origin https://github.com/YOUR_USERNAME/ecommerce-api.git
+git branch -M main
+git push -u origin main
